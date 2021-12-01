@@ -1,0 +1,22 @@
+<mat-card>
+	<mat-card-title>Atualizar Conta</mat-card-title>
+	<form>
+		<mat-form-field>
+			<input matInput placeholder="Agência" name="agencia" [(ngModel)]="conta.agencia">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="N° Conta" name="conta" [(ngModel)]="conta.conta">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="Operação" name="operacao" [(ngModel)]="conta.operacao">
+		</mat-form-field>
+	</form>
+
+	<button mat-raised-button (click)="updateConta()">
+		Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()"  color="primary">
+		Cancelar
+	</button>
+</mat-card>
